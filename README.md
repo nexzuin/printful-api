@@ -1,13 +1,13 @@
-# @penguin-101/printful-api
+# printful-api
 
 Unofficial [Printful API](https://developers.printful.com/) client library — TypeScript, zero runtime dependencies, covers **79 endpoints** (40 V1 + 39 V2).
 
 ```
-npm install @penguin-101/printful-api
+npm install printful-api
 ```
 
 ```ts
-import { Printful } from "@penguin-101/printful-api";
+import { Printful } from "printful-api";
 
 const pf = new Printful({
   token: "your-api-token",
@@ -61,7 +61,7 @@ const { result: products } = await pf.v2.catalog.listProducts();
 ## Installation
 
 ```sh
-npm install @penguin-101/printful-api
+npm install printful-api
 ```
 
 Requires Node.js 18+ (native `fetch`). TypeScript types included.
@@ -131,7 +131,7 @@ await pf.v1.orders.list({ limit: 50, offset: 0 });
 All non-2xx responses throw `PrintfulApiError`:
 
 ```ts
-import { Printful, PrintfulApiError } from "@penguin-101/printful-api";
+import { Printful, PrintfulApiError } from "printful-api";
 
 try {
   await pf.v1.orders.get(999999);

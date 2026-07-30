@@ -1,5 +1,5 @@
 {
-  "name": "@penguin-101/printful-api",
+  "name": "printful-api",
   "version": "1.0.0",
   "description": "Unofficial Printful API client library — Node.js + TypeScript",
   "main": "dist/index.js",
